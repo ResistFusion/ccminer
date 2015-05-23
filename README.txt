@@ -1,5 +1,5 @@
 
-ccMiner release 1.6.4-tpruvot (May 2015) - "Multi-pools config"
+ccMiner release 1.6.x-tpruvot (Jun 2015) - "SHA and ..."
 ---------------------------------------------------------------
 
 ***************************************************************
@@ -24,6 +24,7 @@ cbuchner v1.2:
 
 This is a CUDA accelerated mining application which handle :
 
+Credits
 HeavyCoin & MjollnirCoin
 FugueCoin
 GroestlCoin & Myriad-Groestl
@@ -63,8 +64,10 @@ its command line interface and options.
 
   -a, --algo=ALGO       specify the algorithm to use
                           anime       use to mine Animecoin
+                          bitcoin     use to mine SHA-256d coins
                           blake       use to mine Saffroncoin (Blake 256)
                           blakecoin   use to mine Old Blake 256
+                          credits     use to mine Credits [CRE]
                           deep        use to mine Deepcoin
                           dmd-gr      use to mine Diamond-Groestl
                           fresh       use to mine Freshcoin
@@ -214,6 +217,12 @@ so we can more efficiently implement new algorithms using the latest hardware
 features.
 
 >>> RELEASE HISTORY <<<
+
+  June 2015...    v1.6.5
+                  NVML enhancements (to support mem/gpu clocks)
+                  Compatibility with CUDA 7.0 (but slower hashrate)
+                  Various improvements on multipool and cmdline parameters
+                  Import Credits (djm34) and Bitcoin (klaus) "SHA256" algos
 
   May 26th 2015   v1.6.4
                   Implement multi-pool support (failover and time rotate)
